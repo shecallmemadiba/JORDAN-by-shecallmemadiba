@@ -1,0 +1,1413 @@
+/* Definições de Fonte */
+@font-face {
+  font-family: "KareliaTrial-Regular";
+  src: url("./font/Karelia/KareliaTrial-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KareliaTrial-Bold";
+  src: url("./font/Karelia/KareliaTrial-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KareliaTrial-Medium";
+  src: url("./font/Karelia/KareliaTrial-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KareliaTrial-Black";
+  src: url("./font/Karelia/KareliaTrial-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Estilos Gerais */
+.navbar {
+  background-color: rgb(0, 0, 0);
+  height: 13vh;
+  width: 99vw;
+
+}
+
+body {
+  /* overflow: hidden; */
+  background-color: #000000;
+  /* position: relative; */
+  width: 100%;
+  height: 100%;
+}
+
+:root::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.App {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.logoinical {
+  width: 120px;
+  height: auto;
+  padding-left: 5%;
+  padding-top: 1%;
+}
+
+.botaodescarregar {
+  position: absolute;
+  bottom: 90%;
+  margin-left: 72%;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 25px;
+  background-image: url("img/Fundo%20Padrao%20eLearning.png");
+  color: #ffffff;
+  font-family: "KareliaTrial-Black", sans-serif;
+  box-shadow: 0 0 20px rgba(11, 242, 250, 0.8);
+  /* Adjust values as needed */
+  transition: box-shadow 0.3s ease-in-out;
+  /* Add a smooth transition effect */
+}
+
+.botaodescarregar:hover,
+.botaodescarregar2:hover {
+  box-shadow: 0 0 20px rgba(11, 242, 250, 1);
+  /* Adjust values as needed */
+}
+
+
+/* Seção de Herói */
+.App-header {
+  background-image: url("/src/img/IMAGEM\ HEROI.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 90vw;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  border-radius: 25px;
+}
+
+.h1_heroi {
+  padding-left: 5%;
+  margin-bottom: 1px;
+  font-size: 6rem;
+  margin-top: -1%;
+}
+
+.p_heroi {
+  font-family: "KareliaTrial-Regular", sans-serif;
+  font-size: 4rem;
+  padding-left: 5%;
+  margin-top: 0%;
+}
+
+/* Image Container Animation */
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  /* Adicionar transições suaves para transformação e opacidade */
+}
+
+.navbar img {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  /* Adicionar transições suaves para transformação e opacidade */
+}
+
+.navbar button {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  /* Adicionar transições suaves para transformação e opacidade */
+}
+
+.secaoDesenvolvimento button {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  /* Adicionar transições suaves para transformação e opacidade */
+}
+
+.qrcode {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  /* Adicionar transições suaves para transformação e opacidade */
+}
+
+.fotoapp1 {
+  position: absolute;
+  height: auto;
+  width: 12rem;
+  left: 66vw;
+  top: -55vh;
+  box-shadow: 5px 5px 20px rgb(0, 0, 0);
+  /* Adjust values as needed */
+}
+
+.fotoapp2 {
+  position: absolute;
+  height: auto;
+  width: 12rem;
+  top: -50vh;
+  left: 59vw;
+  box-shadow: 5px 5px 20px rgb(0, 0, 0);
+  /* Adjust values as needed */
+}
+
+/* Add the following styles for smooth image transformation */
+.fotoapp1.levitars:hover,
+.fotoapp2.levitars:hover,
+.botaodescarregar2:hover,
+.botaodescarregar:hover,
+.logoinical:hover,
+.qrcode:hover {
+  transform: scale(1.1);
+  /* Increase the scale on hover for a smooth effect */
+  animation: shake 0.5s ease-in-out;
+}
+
+/* Seção de Desenvolvimento */
+.secaoDesenvolvimento {
+  height: 90vh;
+  width: 90vw;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.secaoDesenvolvimento h1,
+.secaoDesenvolvimento p {
+  max-width: 1400px;
+  margin-bottom: 2%;
+}
+
+.secaoDesenvolvimento h1 {
+  margin-top: 10%;
+  font-size: 4rem;
+}
+
+.secaoDesenvolvimento p {
+  margin-top: 5%;
+  font-size: 1.5rem;
+}
+
+.botaodescarregar2 {
+  margin-top: 4%;
+  margin-bottom: 8.6%;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  background-image: url("img/Fundo%20Padrao%20eLearning.png");
+  color: #fff;
+  font-family: "KareliaTrial-Black", sans-serif;
+  box-shadow: 0 0 20px rgba(11, 242, 250, 0.8);
+  /* Adjust values as needed */
+  transition: box-shadow 0.3s ease-in-out;
+  /* Add a smooth transition effect */
+}
+
+/* Seção de QR Code */
+.secaoQRCODE {
+  background-image: url("/src/img/Fundo\ Padrao\ Geral.jpg");
+  height: 75vh;
+  width: 90vw;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.secaoQRCODE h1 {
+  font-family: "KareliaTrial-Regular", sans-serif;
+  margin-bottom: 10%;
+  font-size: 4rem;
+}
+
+.qrcode {
+  height: auto;
+  width: 15%;
+  padding-bottom: 5%;
+}
+
+/* Seção de Espaçador */
+.intervalo {
+  min-height: 15vh;
+  width: 90vw;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.intervalo2 {
+  min-height: 15vh;
+  width: 90vw;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  border-radius: 25px;
+}
+
+/* Seção de Notícias */
+
+.secaoNOTICIAS {
+  /*  background-image: url('/src/img/Fundo\ Padrão\ eLearning.png');*/
+  background-color: black;
+  min-height: 70vh;
+  width: 90vw;
+  margin-left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  border-radius: 25px;
+  margin-bottom: 4%;
+  margin-top: 3%;
+}
+
+.noticias-container {
+  display: flex;
+  justify-content: space-around;
+  width: 88%;
+  padding: 0;
+}
+
+.noticia {
+  background-image: url('/src/img/Fundo\ Padrao\ Sourcing.png');
+  ;
+  flex: 0 0 calc(20% - 20px);
+  /* Adjust the width of each news card as needed */
+  margin: 10px;
+  padding: 20px;
+  /*   border: 2px solid;
+ */
+  color: white;
+  border-radius: 10px;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.noticia:hover {
+  transform: scale(1.05);
+  /* Add a slight scale effect on hover for a modern touch */
+}
+
+.noticia img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Add a subtle box shadow for depth */
+}
+
+
+.noticia h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.noticia p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.secaoNOTICIAS h1 {
+  font-family: "KareliaTrial-Bold", sans-serif;
+  font-size: 4rem;
+}
+
+/* Seção de Rodapé */
+.FOOTER {
+  background-image: url("/src/img/Fundo\ Padrao\ Geral.jpg");
+  min-width: 90vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.logotipoFOOTER {
+  height: auto;
+  width: 8%;
+  margin-top: -2%;
+}
+
+.FOOTER p {
+  font-family: "KareliaTrial-Regular", sans-serif;
+  font-size: 0.8em;
+}
+
+/* Consultar a nossa Política de Cookies e Política de Privacidade */
+/* © Copyright 2023 - Olisipo. Todos os direitos reservados */
+
+/* Consulte a nossa Politica de cookies e a nossa Politica de privacidade */
+/* © Copyright 2023 - Olisipo. Todos os direitos reservados */
+
+
+
+
+/* Media query for ecrãs médios (medium screens) */
+
+
+
+
+
+/* 4K  */
+@media(min-width: 2560px) {
+
+
+  /* Estilos Gerais */
+  .navbar {
+    background-color: rgb(0, 0, 0);
+    height: 9vh;
+    width: 100vw;
+    margin-bottom: 5%;
+  }
+
+  .logoinical {
+    width: 10%;
+    padding-left: 5%;
+    padding-top: 1%;
+  }
+
+  .botaodescarregar {
+    margin-left: 70vw;
+    padding: 15px 15px 15px 15px;
+    font-size: 2rem;
+    /* Adjust the font size as needed */
+
+  }
+
+  .botaodescarregar2 {
+    margin-top: 4%;
+  }
+
+  body {
+    overflow-x: auto;
+    /* Allow horizontal scrolling on smaller screens */
+  }
+
+  .App-header {
+    height: 60vh;
+  }
+
+
+  .h1_heroi {
+    font-size: 10rem;
+    margin-top: -3%;
+  }
+
+  .p_heroi {
+    font-size: 7.5rem;
+    padding-left: 5%;
+    margin-top: 0;
+    margin-bottom: 10%;
+  }
+
+  .image-container {
+    /*     margin-right: 20%; */
+    position: absolute;
+    height: 60vh;
+    width: 89vw;
+  }
+
+  .fotoapp1 {
+    position: relative;
+    width: 20vh;
+    height: auto;
+    top: 20%;
+    left: 70%;
+  }
+
+  .fotoapp2 {
+    position: relative;
+    width: 20vh;
+    height: auto;
+    top: 15%;
+    left: 48%;
+  }
+
+
+
+  .secaoDesenvolvimento {
+    height: 0%;
+  }
+
+  .secaoDesenvolvimento h1 {
+    font-size: 3.5rem;
+    /* Adjust as needed */
+  }
+
+  .secaoDesenvolvimento p {
+    font-size: 1.6rem;
+    /* Adjust as needed */
+  }
+
+  .secaoQRCODE {
+    height: 45vh;
+    padding: 10px 0px;
+  }
+
+  .secaoQRCODE h1 {
+    font-size: 2rem;
+    /* Adjust as needed */
+    margin-bottom: 4%;
+
+  }
+
+  .qrcode {
+    width: 20%;
+    height: auto;
+  }
+
+  .secaoNOTICIAS {
+    /*  background-image: url('/src/img/Fundo\ Padrão\ eLearning.png');*/
+    background-color: black;
+    min-height: 0vh;
+    width: 95vw;
+    margin-left: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    border-radius: 25px;
+    margin-bottom: 5%;
+    margin-top: 0%;
+  }
+
+
+  .FOOTER {
+    height: 20vh;
+  }
+
+  .logotipoFOOTER {
+    width: 10%;
+  }
+
+  .FOOTER p {
+    font-size: 1.4rem;
+  }
+
+}
+
+/* laptop L */
+@media(min-width: 1540px) and (max-width: 2559px) {
+
+
+  /* Estilos Gerais */
+  .navbar {
+    background-color: rgb(0, 0, 0);
+    height: 9vh;
+    width: 100vw;
+    margin-bottom: 5%;
+  }
+
+  .logoinical {
+    width: 10%;
+    padding-left: 5%;
+    padding-top: 1%;
+  }
+
+  .botaodescarregar {
+    margin-left: 66vw;
+    padding: 15px 15px 15px 15px;
+    font-size: 1.2rem;
+    /* Adjust the font size as needed */
+
+  }
+
+  .botaodescarregar2 {
+    margin-top: 4%;
+  }
+
+  body {
+    overflow-x: auto;
+    /* Allow horizontal scrolling on smaller screens */
+  }
+
+  .App-header {
+    height: 60vh;
+  }
+
+
+  .h1_heroi {
+    font-size: 6rem;
+    margin-top: -3%;
+  }
+
+  .p_heroi {
+    font-size: 3.5rem;
+    padding-left: 5%;
+    margin-top: 0;
+    margin-bottom: 10%;
+  }
+
+  .image-container {
+    /*     margin-right: 20%; */
+    position: absolute;
+    height: 60vh;
+    width: 89vw;
+  }
+
+  .fotoapp1 {
+    position: relative;
+    width: 20vh;
+    height: auto;
+    top: 20%;
+    left: 70%;
+  }
+
+  .fotoapp2 {
+    position: relative;
+    width: 20vh;
+    height: auto;
+    top: 15%;
+    left: 48%;
+  }
+
+
+
+  .secaoDesenvolvimento {
+    height: 0%;
+  }
+
+  .secaoDesenvolvimento h1 {
+    font-size: 2.5rem;
+    /* Adjust as needed */
+  }
+
+  .secaoDesenvolvimento p {
+    font-size: 1.2rem;
+    /* Adjust as needed */
+  }
+
+  .secaoQRCODE {
+    height: 0%;
+    padding: 10px 0px;
+  }
+
+  .secaoQRCODE h1 {
+    font-size: 2rem;
+    /* Adjust as needed */
+    margin-bottom: 4%;
+
+  }
+
+  .qrcode {
+    width: 20%;
+    height: auto;
+  }
+
+  .secaoNOTICIAS {
+    /*  background-image: url('/src/img/Fundo\ Padrão\ eLearning.png');*/
+    background-color: black;
+    min-height: 70vh;
+    width: 90vw;
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    border-radius: 25px;
+    margin-bottom: 2%;
+    margin-top: -2%;
+  }
+
+
+
+  .logotipoFOOTER {
+    width: 10%;
+  }
+
+  .FOOTER p {
+    font-size: 0.5rem;
+  }
+
+}
+
+
+
+/* laptop */
+@media(min-width: 1024px) and (max-width: 1539px) {
+
+
+  /* Estilos Gerais */
+  .navbar {
+    background-color: rgb(0, 0, 0);
+    height: 9vh;
+    width: 100vw;
+    margin-bottom: 5%;
+  }
+
+  .logoinical {
+    width: 10%;
+    padding-left: 5%;
+    padding-top: 1%;
+  }
+  
+  .botaodescarregar {
+    /* Adjust the font size as needed */
+    margin-left: 65%;
+  }
+
+  .botaodescarregar2 {
+    margin-top: 4%;
+  }
+
+  body {
+    overflow-x: auto;
+    /* Allow horizontal scrolling on smaller screens */
+  }
+
+  .App-header {
+    height: 70vh;
+  }
+
+
+  .h1_heroi {
+    font-size: 6rem;
+    margin-top: 0%;
+  }
+
+  .p_heroi {
+    font-size: 3.5rem;
+    padding-left: 5%;
+    margin-top: 0%;
+    margin-bottom: 10%;
+  }
+
+  .image-container {
+    /*     margin-right: 20%; */
+    position: absolute;
+    height: 60vh;
+    width: 89vw;
+  }
+
+  .fotoapp1 {
+    position: relative;
+    width: 20vh;
+    height: auto;
+    top: 20%;
+    left: 75%;
+  }
+
+  .fotoapp2 {
+    position: relative;
+    width: 20vh;
+    height: auto;
+    top: 15%;
+    left: 58%;
+  }
+
+
+
+  .secaoDesenvolvimento {
+    height: 0%;
+    margin-top: 0%;
+  }
+
+  .secaoDesenvolvimento h1 {
+    font-size: 2.5rem;
+    /* Adjust as needed */
+  }
+
+  .secaoDesenvolvimento p {
+    font-size: 1.3rem;
+    margin-top: 2%;
+
+  }
+
+  .secaoQRCODE {
+    padding: 20px 5px;
+  }
+
+  .secaoQRCODE h1 {
+    font-size: 2rem;
+    /* Adjust as needed */
+  }
+
+  .qrcode {
+    width: 20%;
+    height: auto;
+    margin-top: -5%;
+
+  }
+
+
+
+
+  .secaoNOTICIAS {
+    margin-bottom: 10%;
+  }
+
+  .secaoNOTICIAS {
+    /*  background-image: url('/src/img/Fundo\ Padrão\ eLearning.png');*/
+    background-color: rgb(0, 0, 0);
+    min-height: 70vh;
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    border-radius: 25px;
+    margin-bottom: 4%;
+    margin-top: 0%;
+    padding: auto;
+  }
+
+
+
+  .FOOTER {
+    height: 0%;
+  }
+
+  .logotipoFOOTER {
+    width: 10%;
+  }
+
+  .FOOTER p {
+    font-size: 0.5rem;
+  }
+
+}
+
+
+/* md */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+
+  /* Estilos Gerais */
+  .navbar {
+    background-color: rgb(0, 0, 0);
+    height: 9vh;
+    width: 100vw;
+    margin-bottom: 5%;
+  }
+
+  .logoinical {
+    width: 20%;
+    padding-left: 5%;
+    padding-top: 1%;
+  }
+
+  .botaodescarregar {
+    margin-left: 55vw;
+    padding: 5px 5px 5px 5px;
+    font-size: 0.8rem;
+    /* Adjust the font size as needed */
+
+  }
+
+  .botaodescarregar2 {
+    margin-top: 4%;
+  }
+
+  body {
+    overflow-x: auto;
+    /* Allow horizontal scrolling on smaller screens */
+  }
+
+  .App-header {
+    height: 60vh;
+  }
+
+
+  .h1_heroi {
+    font-size: 4rem;
+    margin-top: -10%;
+  }
+
+  .p_heroi {
+    font-size: 2.5rem;
+    padding-left: 5%;
+    margin-top: 0;
+    margin-bottom: 10%;
+  }
+
+  .image-container {
+    /*     margin-right: 20%; */
+    position: absolute;
+    height: 60vh;
+    width: 89vw;
+  }
+
+  .fotoapp1 {
+    position: relative;
+    width: 15vh;
+    height: auto;
+    top: 40%;
+    left: 70%;
+  }
+
+  .fotoapp2 {
+    position: relative;
+    width: 15vh;
+    height: auto;
+    top: 35%;
+    left: 48%;
+  }
+
+
+
+  .secaoDesenvolvimento {
+    height: 0%;
+  }
+
+  .secaoDesenvolvimento h1 {
+    font-size: 2.5rem;
+    /* Adjust as needed */
+  }
+
+  .secaoDesenvolvimento p {
+    font-size: 1.2rem;
+    /* Adjust as needed */
+  }
+
+  .secaoQRCODE {
+    height: 50vh;
+    padding: 15px 5px;
+  }
+
+  .secaoQRCODE h1 {
+    font-size: 2rem;
+    /* Adjust as needed */
+
+  }
+
+  .qrcode {
+    width: 30%;
+    height: auto;
+  }
+
+  .secaoNOTICIAS h1 {
+    margin-top: 0;
+    font-size: 2.5rem;
+  }
+
+  .secaoNOTICIAS {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .noticias-container {
+    flex-direction: column;
+    /* Stack items vertically on smaller screens */
+    align-items: center;
+    /* Center items in the container */
+    width: 100%;
+    /* Full width on smaller screens */
+  }
+
+  .noticia {
+    flex: 0 0 calc(100% - 20px);
+    /* Full width with some margin on smaller screens */
+    margin: 10px 0;
+    /* Add some vertical margin between news cards */
+  }
+
+
+  .FOOTER {
+    height: 0%;
+  }
+
+  .logotipoFOOTER {
+    width: 20%;
+  }
+
+  .FOOTER p {
+    font-size: 0.5rem;
+  }
+
+}
+
+
+
+
+/* xs */
+@media (min-width: 321px) and (max-width: 767px) {
+
+  /* Estilos Gerais */
+  .navbar {
+    background-color: rgb(0, 0, 0);
+    height: 9vh;
+    width: 95vw;
+  }
+
+  .logoinical {
+    border: 4px solid rgba(0, 0, 0, 0.6);
+    width: 20%;
+  }
+
+  .botaodescarregar {
+    bottom: 94%;
+    margin-left: 52vw;
+    padding: 5px;
+    font-size: 0.4rem;
+  }
+
+  .botaodescarregar2 {
+    margin-top: 4%;
+    padding: 8px 14px;
+    /* Adjust the padding as needed */
+    font-size: 0.5rem;
+    /* Adjust the font size as needed */
+    box-shadow: 1px 1px 20px rgb(11, 242, 250);
+    /* Adjust values as needed */
+  }
+
+  body {
+    overflow-x: auto;
+    /* Allow horizontal scrolling on smaller screens */
+  }
+
+  .App-header {
+    height: 60vh;
+    margin-top: 2%;
+  }
+
+  .h1_heroi {
+    font-size: 2.5rem;
+    margin-top: -50%;
+  }
+
+  .p_heroi {
+    font-size: 1.3rem;
+    padding-left: 5%;
+    margin-top: 0;
+    margin-bottom: 10%;
+  }
+
+  .image-container {
+    position: absolute;
+    height: 60vh;
+    width: 89vw;
+  }
+
+  .fotoapp1 {
+    position: relative;
+    width: 15vh;
+    height: auto;
+    top: 40%;
+    left: 55%;
+  }
+
+  .fotoapp2 {
+    position: relative;
+    width: 15vh;
+    height: auto;
+    top: 40%;
+    left: 15%;
+  }
+
+  .secaoDesenvolvimento {
+    height: 0%;
+  }
+
+  .secaoDesenvolvimento h1 {
+    font-size: 2rem;
+  }
+
+  .secaoDesenvolvimento p {
+    font-size: 0.7rem;
+  }
+
+  .secaoQRCODE {
+    height: 40vh;
+  }
+
+  .secaoQRCODE h1 {
+    font-size: 1.5rem;
+  }
+
+  .qrcode {
+    width: 30%;
+    height: auto;
+  }
+
+  .secaoNOTICIAS h1 {
+    margin-top: 0;
+    font-size: 2rem;
+  }
+
+  .secaoNOTICIAS {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .noticias-container {
+    flex-direction: column;
+    align-items: center;
+    width: 99%;
+  }
+
+  .noticia {
+    flex: 0 0 calc(100% - 20px);
+    margin: 10px 0;
+  }
+
+  .FOOTER {
+    height: 0%;
+  }
+
+  .logotipoFOOTER {
+    width: 20%;
+  }
+
+  .FOOTER p {
+    font-size: 0.5rem;
+  }
+}
+
+/* xxs */
+@media (min-width: 100px) and (max-width: 320px) {
+
+  /* Estilos Gerais */
+  .navbar {
+    background-color: rgb(0, 0, 0);
+    height: 9vh;
+    width: 95vw;
+  }
+
+  .logoinical {
+    width: 20%;
+    border: 4px solid rgba(0, 0, 0, 0.6);
+  }
+
+  .botaodescarregar {
+    bottom: 94%;
+    margin-left: 48vw;
+    padding: 5px;
+    font-size: 0.4rem;
+  }
+
+  .botaodescarregar2 {
+    margin-top: 4%;
+    padding: 8px 14px;
+    /* Adjust the padding as needed */
+    font-size: 0.5rem;
+    /* Adjust the font size as needed */
+    box-shadow: 1px 1px 20px rgb(11, 242, 250);
+  }
+
+  body {
+    overflow-x: auto;
+    /* Allow horizontal scrolling on smaller screens */
+  }
+
+  .App-header {
+    height: 60vh;
+    margin-top: 2%;
+  }
+
+  .h1_heroi {
+    font-size: 2.5rem;
+    margin-top: -50%;
+  }
+
+  .p_heroi {
+    font-size: 1.3rem;
+    padding-left: 5%;
+    margin-top: 0;
+    margin-bottom: 25%;
+  }
+
+  .image-container {
+    position: absolute;
+    height: 60vh;
+    width: 89vw;
+  }
+
+  .fotoapp1 {
+    position: relative;
+    width: 15vh;
+    height: auto;
+    top: 40%;
+    left: 55%;
+  }
+
+  .fotoapp2 {
+    position: relative;
+    width: 15vh;
+    height: auto;
+    top: 40%;
+    left: 15%;
+  }
+
+  .secaoDesenvolvimento {
+    height: 0%;
+  }
+
+  .secaoDesenvolvimento h1 {
+    font-size: 2rem;
+  }
+
+  .secaoDesenvolvimento p {
+    font-size: 0.7rem;
+  }
+
+  .secaoQRCODE {
+    height: 40vh;
+  }
+
+  .secaoQRCODE h1 {
+    font-size: 1.5rem;
+  }
+
+  .qrcode {
+    width: 30%;
+    height: auto;
+  }
+
+  .secaoNOTICIAS h1 {
+    margin-top: 0;
+    font-size: 2rem;
+  }
+
+  .secaoNOTICIAS {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .noticias-container {
+    flex-direction: column;
+    align-items: center;
+    width: 99%;
+  }
+
+  .noticia {
+    flex: 0 0 calc(100% - 20px);
+    margin: 10px 0;
+  }
+
+  .FOOTER {
+    height: 0%;
+  }
+
+  .logotipoFOOTER {
+    width: 20%;
+  }
+
+  .FOOTER p {
+    font-size: 0.5rem;
+  }
+}
+
+
+
+
+
+
+
+/* animacoes{
+ */
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-5px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes levitar {
+  0% {
+    transform: translate(-5px, -5px);
+  }
+
+  25% {
+    transform: translate(5px, -5px);
+  }
+
+  50% {
+    transform: translate(5px, 5px);
+  }
+
+  75% {
+    transform: translate(-5px, 5px);
+  }
+
+  100% {
+    transform: translate(-5px, -5px);
+  }
+}
+@keyframes levitars {
+  0% {
+    transform: translate(-7px, -7px);
+  }
+
+  25% {
+    transform: translate(7px, -7px);
+  }
+
+  50% {
+    transform: translate(7px, 7px);
+  }
+
+  75% {
+    transform: translate(-7px, 7px);
+  }
+
+  100% {
+    transform: translate(-7px, -7px);
+  }
+}
+
+.App-header.levitar {
+  animation: levitar 5s infinite ease-in-out;
+  /*   animation: levitar 3s infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+ */
+}
+.fotoapp1.levitars {
+  animation: levitars 5s infinite ease-in-out;
+  /*   animation: levitar 3s infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+ */
+}
+.fotoapp2.levitars {
+  animation: levitars 4s infinite ease-in-out;
+  /*   animation: levitar 3s infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+ */
+}
+
+/* Header Animation */
+/* .App-header.slide-up {
+  animation: slideUp 2s ease-out;
+}
+ */
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(70px);
+    opacity: 0;
+  }
+
+  25% {
+    transform: translateY(30px);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(40px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Navbar Animation */
+.navbar.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Desenvolvimento Animation */
+.secaoDesenvolvimento.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Desenvolvimento Animation */
+.secaoDesenvolvimento.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* QRCODE Animation */
+.secaoQRCODE.levitar {
+  animation: levitar 5s infinite ease-in-out;
+}
+
+/* Espaçador Animation */
+.intervalo.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* NOTÍCIAS Animation */
+.secaoNOTICIAS.slide-up {
+  animation: slideUp 1s ease-out;
+}
+
+/* Espaçador Animation 2 */
+.intervalo2.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* FOOTER Animation */
+.FOOTER.slide-up {
+  animation: slideUp 1s ease-out;
+}
+
+/* } */
