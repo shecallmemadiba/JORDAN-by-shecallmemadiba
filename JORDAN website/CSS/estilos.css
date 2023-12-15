@@ -1,0 +1,264 @@
+/***
+    The new CSS reset - version 1.7.3 (last updated 7.8.2022)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+
+/*!
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+
+    Remoção de todos os estilos padrões de css(User-Agent-Stylesheet), exceto pela propriedade
+    de display - Os Simbolo, em parte para resolver o bug de sprites do Firefox SVG
+ */
+*:where(
+    :not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)
+  ) {
+  all: unset;
+  display: revert;
+}
+
+/*! Preferred box-sizing value 
+ * Predefinição dos valor das box-sizing
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a,
+button {
+  cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) 
+    remover os estilo das listas(numeros/bullets)
+*/
+ol,
+ul,
+botoes_nav {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container 
+   para as imagens não serem capaz de exceder o tamanho de seus containers
+*/
+img {
+  max-width: 100%;
+}
+
+/* removes spacing between cells in tables 
+    remover os espaçamentos entre as celulas de um tabela
+*/
+table {
+  border-collapse: collapse;
+}
+
+/* fim do css reset */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+} /* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.headercontain {
+  width: 100%;
+  height: 100vh;
+  padding: 0 7%;
+  z-index: 2;
+  background-image: url("/img/Jordan-Logo-PNG-HD.png");
+  background-position: center;
+  background-repeat: repeat;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: aliceblue;
+  height: 10vh;
+  opacity: 0.5;
+}
+
+.logo {
+  width: 130px;
+  cursor: pointer;
+  margin-left: 4%;
+  opacity: 0.5;
+  transition: opacity ease-in-out;
+}
+
+.logo:hover {
+  opacity: 1;
+}
+
+nav ul {
+  flex: 1;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+
+}
+
+.btn {
+  color: rgb(73, 73, 73);
+  text-decoration: none;
+  border: 1px solid rgb(177, 172, 172);
+  padding: 10px 30px;
+  border-radius: 30px;
+  margin-right: 4%;
+}
+
+.btn:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: line-through;
+  background-color: rgb(255, 0, 0);
+}
+
+.info {
+  width: 100%;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+}
+
+.info div {
+  margin: 0 20px;
+}
+
+.info div h2 {
+  font-size: 44px;
+  font-weight: 400;
+}
+
+.info #line {
+  flex: 1;
+  height: 4px;
+}
+
+.imgconfig {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  border-top: 5px solid white;
+}
+.imgconfig2 {
+  width: 50%;
+  height: 100vh;
+  padding: 0;
+  border-left: 1px solid white;
+}
+
+.imgconfig2_1 {
+  float: left;
+  width: 50%;
+  height: 100vh;
+  padding: 0;
+  border-right: 1px solid white;
+}
+
+#FINAL {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+/* #modelo,
+#nome,
+#preco,
+#line {
+  -webkit-text-stroke: 0.5px black;
+} */
+
+/* FOOTER */
+
+.footer-basic {
+  padding:40px 0;
+  background-color:#ffffff;
+  color:#4b4c4d;
+}
+
+.footer-basic .list-inline {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic .list-inline-item {
+  display: inline-block;
+  padding:0 10px;
+}
+
+.footer-basic .list-inline a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic .list-inline a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
